@@ -1,0 +1,33 @@
+.join-block {
+    margin-left: 70px;
+}
+
+.join-block__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.join-block__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.join-block__link {
+    display: block;
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    color: $primary-white-color;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+    }
+}
+
+.join-block__icon {
+    fill: currentColor;
+}

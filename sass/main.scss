@@ -1,0 +1,13 @@
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/utils';
+@import'./components/components';
+
+@import './layouts/hero';
+@import './layouts/features';
+
+@import './layouts/team';
+@import './layouts/clients';
+@import './layouts/footer/footer';
+@import './layouts/footer/join-block';
+@import './layouts/footer/subscription';
