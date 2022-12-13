@@ -1,10 +1,13 @@
-.subscription {
-    margin-left: 93px;
-}
-
 .subscription__form {
     display: flex;
+    flex-direction: column;
+    gap: 20px;
     align-items: center;
+
+    @include desktop {
+        flex-direction: row;
+        gap: 12px;
+    }
 }
 
 .subscription__input {
@@ -31,8 +34,8 @@
 .subscription__button {
     display: flex;
     align-items: center;
+    gap: 10px;
     height: 50px;
-    margin-left: 12px;
     padding: 10px 28px;
     font-weight: 700;
     font-size: 16px;

@@ -15,10 +15,10 @@
 </head>
 
 <body>
-    <!-- <header class="header">
+    <header class="header">
         <div class="container header-flex">
-            <nav class="header-flex">
-                <a href="./index.html" class="header__logo"><span class="header__logo--accent">Web</span>Studio</a>
+            <a href="./index.html" class="header__logo"><span class="header__logo--accent">Web</span>Studio</a>
+            <nav class="header-flex header__nav">
                 <ul class="header-flex nav-list">
                     <li class="nav-list__item"><a href="./index.html" class="nav-list__link current">Студія</a></li>
                     <li class="nav-list__item"><a href="./portfolio.html" class="nav-list__link">Портфоліо</a></li>
@@ -43,8 +43,51 @@
                     </a>
                 </li>
             </ul>
+            <button type="button" class="menu-open" data-menu-open>
+                <svg width="24" height="16">
+                    <use href="./images/icons.svg#icon-menu"></use>
+                </svg>
+            </button>
+            <div class="mobile-menu container is-hidden" data-menu>
+                <button type="button" class="menu-close" data-menu-close>
+                    <svg width="20" height="20">
+                        <use href="./images/icons.svg#icon-cross"></use>
+                    </svg>
+                </button>
+                <ul class="menu-nav__list">
+                    <li class="menu-nav__item"><a href="./index.html" class="menu-nav__link">Студія</a></li>
+                    <li class="menu-nav__item"><a href="./portfolio.html" class="menu-nav__link">Портфоліо</a></li>
+                    <li class="menu-nav__item"><a href="" class="menu-nav__link">Контакти</a></li>
+                </ul>
+                <ul class="menu-contact">
+                    <li class="menu-contact__item">
+                        <a href="tel:+380961111111" class="menu-contact__tel">
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+                    <li class="menu-contact__item">
+                        <a href="mailto:info@devstudio.com" class="menu-contact__mail">
+                            info@devstudio.com
+                        </a>
+                    </li>
+                </ul>
+                <ul class="menu-links">
+                    <li class="menu-links__item">
+                        <a href="" class="menu-links__link">Instagram</a>
+                    </li>
+                    <li class="menu-links__item">
+                        <a href="" class="menu-links__link">Twitter</a>
+                    </li>
+                    <li class="menu-links__item">
+                        <a href="" class="menu-links__link">Facebook</a>
+                    </li>
+                    <li class="menu-links__item">
+                        <a href="" class="menu-links__link">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </header> -->
+    </header>
     <main>
         <section class="section hero">
             <div class="container">
@@ -97,7 +140,7 @@
                 </ul>
             </div>
         </section>
-        <!-- <section class="section examples">
+        <section class="section examples">
             <div class="container">
                 <h2 class="examples__heading">Чим ми займаємося</h2>
                 <ul class="examples__flex">
@@ -127,7 +170,7 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
         <section class="section team">
             <div class="container">
                 <h2 class="team__heading">Наша команда</h2>
@@ -356,22 +399,22 @@
                 </ul>
             </div>
         </section>
-    </main> -->
-    <!-- <footer class="footer">
+    </main>
+    <footer class="footer">
         <div class="container footer-flex">
             <div>
                 <a href="./index.html" class="footer__logo"><span class="footer__logo--accent">Web</span>Studio</a>
                 <address>
                     <ul>
-                        <li>
+                        <li class="address__item">
                             <a href="https://goo.gl/maps/j4BtSMbrtdedQsj39" class="footer__address">м. Київ, пр-т Лесі
                                 Українки,
                                 26</a>
                         </li>
-                        <li>
+                        <li class="address__item">
                             <a href="mailto:info@devstudio.com" class="footer__contact">info@devstudio.com</a>
                         </li>
-                        <li>
+                        <li class="address__item">
                             <a href="tel:+380961111111" class="footer__contact">+38 096 111 11 11</a>
                         </li>
                     </ul>
@@ -425,8 +468,8 @@
                 </form>
             </div>
         </div>
-    </footer> -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    </footer>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal__button" data-modal-close>
                 <svg width="11" height="11" class="modal__icon">
@@ -464,7 +507,6 @@
                     <svg width="16" height="15" class="modal-form__checkbox-icon">
                         <use href="./images/icons.svg#icon-check"></use>
                     </svg>
-                    </span>
                     Погоджуюся з розсилкою та приймаю
                     <a href="" class="modal-form__checkbox-link">Умови договору</a>
                 </label>
@@ -472,7 +514,8 @@
             </form>
         </div>
     </div>
-    <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

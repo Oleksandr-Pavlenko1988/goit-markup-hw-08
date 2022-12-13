@@ -1,13 +1,16 @@
 @import './utils/variables';
 @import './utils/mixins';
 @import './utils/utils';
-@import'./components/components';
-
+@import'./components';
+@import'./layouts/header/header';
+@import'./layouts/header/mobile-menu';
 @import './layouts/hero';
 @import './layouts/features';
-
+@import './layouts/examples';
 @import './layouts/team';
 @import './layouts/clients';
 @import './layouts/footer/footer';
 @import './layouts/footer/join-block';
 @import './layouts/footer/subscription';
+@import './layouts/modal/modal';
+@import './layouts/modal/modal-form';
