@@ -17,13 +17,13 @@
 <body>
     <header class="header">
         <div class="container header-flex">
-            <nav class="header-flex">
-                <a href="./index.html" class="header__logo"><span class="header__logo--accent">Web</span>Studio</a>
+            <a href="./index.html" class="header__logo"><span class="header__logo--accent">Web</span>Studio</a>
+            <nav class="header-flex header__nav">
                 <ul class="header-flex nav-list">
                     <li class="nav-list__item"><a href="./index.html" class="nav-list__link">Студія</a></li>
-                    <li class=" nav-list__item"><a href="./portfolio.html" class="nav-list__link current">Портфоліо</a>
+                    <li class="nav-list__item"><a href="./portfolio.html" class="nav-list__link current">Портфоліо</a>
                     </li>
-                    <li class=" nav-list__item"><a href="" class="nav-list__link">Контакти</a></li>
+                    <li class="nav-list__item"><a href="" class="nav-list__link">Контакти</a></li>
                 </ul>
             </nav>
             <ul class="header-flex contact-list">
@@ -44,11 +44,54 @@
                     </a>
                 </li>
             </ul>
+            <button type="button" class="menu-open" data-menu-open>
+                <svg width="24" height="16">
+                    <use href="./images/icons.svg#icon-menu"></use>
+                </svg>
+            </button>
+            <div class="mobile-menu container is-hidden" data-menu>
+                <button type="button" class="menu-close" data-menu-close>
+                    <svg width="20" height="20">
+                        <use href="./images/icons.svg#icon-cross"></use>
+                    </svg>
+                </button>
+                <ul class="menu-nav__list">
+                    <li class="menu-nav__item"><a href="./index.html" class="menu-nav__link">Студія</a></li>
+                    <li class="menu-nav__item"><a href="./portfolio.html" class="menu-nav__link">Портфоліо</a></li>
+                    <li class="menu-nav__item"><a href="" class="menu-nav__link">Контакти</a></li>
+                </ul>
+                <ul class="menu-contact">
+                    <li class="menu-contact__item">
+                        <a href="tel:+380961111111" class="menu-contact__tel">
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+                    <li class="menu-contact__item">
+                        <a href="mailto:info@devstudio.com" class="menu-contact__mail">
+                            info@devstudio.com
+                        </a>
+                    </li>
+                </ul>
+                <ul class="menu-links">
+                    <li class="menu-links__item">
+                        <a href="" class="menu-links__link">Instagram</a>
+                    </li>
+                    <li class="menu-links__item">
+                        <a href="" class="menu-links__link">Twitter</a>
+                    </li>
+                    <li class="menu-links__item">
+                        <a href="" class="menu-links__link">Facebook</a>
+                    </li>
+                    <li class="menu-links__item">
+                        <a href="" class="menu-links__link">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
     <main>
         <section class="section">
-            <div class="container">
+            <div class="portfolio container">
                 <h1 class="visually-hidden">Портфоліо</h1>
                 <ul class="button-list">
                     <li class="button-list__item">
@@ -260,6 +303,8 @@
             </div>
         </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
+</body>
 </body>
 
 </html>
