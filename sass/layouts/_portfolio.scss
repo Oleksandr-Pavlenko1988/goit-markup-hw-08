@@ -1,12 +1,13 @@
 .button-list {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-}
+    flex-wrap: wrap;
+    margin-bottom: 46px;
+    gap: 15px;
 
-.button-list {
-    .button-list__item:not(:first-child) {
-        margin-left: 9px;
+    @include tablet {
+        justify-content: center;
+        gap: 8px;
+
     }
 }
 
