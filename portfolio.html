@@ -230,7 +230,7 @@
                                     media="(min-width: 1200px)">
                                 <source srcset="./images/borders-tab.jpg 1x, ./images/borders-tab2x.jpg 2x"
                                     media="(min-width: 768px)">
-                                <source srcset="./images/borders-mob.jpg 1x, ./images/borders-mob2x.jpg 2x"
+                                <source srсset="./images/borders-mob.jpg 1x, ./images/borders-mob2x.jpg 2x"
                                     media="(max-width: 767px)">
                                 <img class="img" src="./images/borders-mob.jpg" alt="монітор" width="450" height="294">
                             </picture>
@@ -317,15 +317,15 @@
                 <a href="./index.html" class="footer__logo"><span class="footer__logo--accent">Web</span>Studio</a>
                 <address>
                     <ul>
-                        <li>
+                        <li class="address__item">
                             <a href="https://goo.gl/maps/j4BtSMbrtdedQsj39" class="footer__address">м. Київ, пр-т Лесі
                                 Українки,
                                 26</a>
                         </li>
-                        <li>
+                        <li class="address__item">
                             <a href="mailto:info@devstudio.com" class="footer__contact">info@devstudio.com</a>
                         </li>
-                        <li>
+                        <li class="address__item">
                             <a href="tel:+380961111111" class="footer__contact">+38 096 111 11 11</a>
                         </li>
                     </ul>
@@ -367,9 +367,8 @@
             <div class="subscription">
                 <h3 class="footer-title">Підпишіться на розсилку</h3>
                 <form name="subscription-form" class="subscription__form">
-                    <label>
-                        <input type="email" name="email" placeholder="E-mail" class="subscription__input">
-                    </label>
+                    <label for="email"></label>
+                    <input type="email" name="email" id="email" placeholder="E-mail" class="subscription__input">
                     <button type="submit" class="subscription__button">
                         Підписатися
                         <svg width="24" height="24">

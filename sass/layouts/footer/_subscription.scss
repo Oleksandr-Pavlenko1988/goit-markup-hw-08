@@ -11,7 +11,7 @@
 }
 
 .subscription__input {
-    min-width: 358px;
+    width: 100%;
     min-height: 50px;
     padding-left: 15px;
     background-color: transparent;
@@ -29,6 +29,16 @@
     &:focus {
         border-color: $accent-color;
     }
+
+    @include mobile {
+        min-width: 450px;
+    }
+
+    @include desktop {
+        min-width: 358px;
+    }
+
+    ;
 }
 
 .subscription__button {
